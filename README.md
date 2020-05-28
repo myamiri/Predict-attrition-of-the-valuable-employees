@@ -32,22 +32,22 @@ the human element of reaching out the employee, understanding the current situat
 # Modeling
 
 We plan to run : 
-Support Vecror Machine
-Logestic Regression
-Quadratic Discriminant Analysis
-Extra Tree Classifier
-Xgboost classifier
-Light GBM
-CatBoost Classifier
-AdaBoost Classifier
-Bagging Classifier
-RandomForest Classifier
-Stacking Classifier
-Voting Classifier
-Gaussian Naive Bayes (GaussianNB)
-Gaussian Process Classifier
-Ridge Classifier
-Decision Tree Classifier
+Support Vecror Machine,
+Logestic Regression,
+Quadratic Discriminant Analysis,
+Extra Tree Classifier,
+Xgboost classifier,
+Light GBM,
+CatBoost Classifier,
+AdaBoost Classifier,
+Bagging Classifier,
+RandomForest Classifier,
+Stacking Classifier,
+Voting Classifier,
+Gaussian Naive Bayes (GaussianNB),
+Gaussian Process Classifier,
+Ridge Classifier,
+Decision Tree Classifier,
 KNeighbors Classifier
 models  to determine the probability of a certain employee to fall into the condition of Attrition and thus its high risk of leaving the company.
 We will then test different parameters and probability threshold using confusion Matrixes, precision recall curve and ROC curve to determine which of the models is the best predictor and will reccommend its use in practice
@@ -62,4 +62,4 @@ We will then test different parameters and probability threshold using confusion
 - Model is biased towards predicting non attrition.
 - There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. The business relevance is predict attrition well, rather than non attrition hence a lower probability threshold is chosen.
 - The confusion matrix shows that of all the people who are going to leave the company, our algorithm identifies about 43% of them accurately. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
-- Ridge Classifier is the best model, as it predictS a higher area under the roc curve while Gaussian Naive Bayes is the best model, as it identifies higher percent of employees are leaving the company accurately.
+- Ridge Classifier is the best model, as it predicts a higher area under the roc curve while Gaussian Naive Bayes is the best model, as it identifies higher percent of employees are leaving the company accurately.
