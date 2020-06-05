@@ -16,17 +16,12 @@ This data set presents an employee survey from IBM, indicating if there is attri
 The data set contains approximately 1500 entries. Given the limited size of the data set, the model should 
 only be expected to provide modest improvement in indentification of attrition vs a random allocation of probability of attrition.
 IBM has gathered information on employee satisfaction, income, seniority and some demographics. It includes the data of 1470 employees. 
-To use a matrix structure, we changed the model to reflect the followin data
+To use a matrix structure, we changed the model to reflect the following data.
 
 
 
 
-# Solution
 
-In this context, the use of classification models to predict if an employee is likely 
-to quit could greatly increase the HR’s ability to intervene on time and remedy the situation to prevent attrition. 
-While this model can be routinely run to identify employees who are most likely to quit, the key driver of success would be 
-the human element of reaching out the employee, understanding the current situation of the employee and taking action to remedy controllable factors that can prevent attrition of the employee.
 
 
 # Modeling
@@ -63,3 +58,13 @@ We will then test different parameters and probability threshold using confusion
 - There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. The business relevance is predict attrition well, rather than non attrition hence a lower probability threshold is chosen.
 - The confusion matrix shows that of all the people who are going to leave the company, our algorithm identifies about 43% of them accurately. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
 - Ridge Classifier is the best model, as it predicts a higher area under the roc curve while Gaussian Naive Bayes is the best model, as it identifies higher percent of employees are leaving the company accurately.
+
+
+
+# Solution
+
+In this context, the use of classification models to predict if an employee is likely 
+to quit could greatly increase the HR’s ability to intervene on time and remedy the situation to prevent attrition. 
+While this model can be routinely run to identify employees who are most likely to quit, the key driver of success would be 
+the human element of reaching out the employee, understanding the current situation of the employee and taking action to remedy controllable factors that can prevent attrition of the employee.
+In other words, predictive models could help raise flags, but the ultimate solution to this business problem is a function of the organization's culture: the quality of the relationships between HR and any given employee.
