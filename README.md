@@ -3,7 +3,7 @@
 
 # Problem
 
-Attrition is a problem that impacts all businesses, irrespective of geography, industry and size of the company. 
+Attrition is a problem that impacts all businesses, irrespective of geography, industry or size. 
 Employee attrition leads to significant costs for a business, including the cost of business disruption, hiring new staff and training new staff. 
 As such, there is great business interest in understanding the drivers of, and minimizing staff attrition.
 
@@ -26,26 +26,8 @@ To use a matrix structure, we changed the model to reflect the following data.
 
 # Modeling
 
-We plan to run : 
-Support Vecror Machine,
-Logestic Regression,
-Quadratic Discriminant Analysis,
-Extra Tree Classifier,
-Xgboost classifier,
-Light GBM,
-CatBoost Classifier,
-AdaBoost Classifier,
-Bagging Classifier,
-RandomForest Classifier,
-Stacking Classifier,
-Voting Classifier,
-Gaussian Naive Bayes (GaussianNB),
-Gaussian Process Classifier,
-Ridge Classifier,
-Decision Tree Classifier,
-KNeighbors Classifier
-models  to determine the probability of a certain employee to fall into the condition of Attrition and thus its high risk of leaving the company.
-We will then test different parameters and probability threshold using confusion Matrixes, precision recall curve and ROC curve to determine which of the models is the best predictor and will reccommend its use in practice
+We plan to run: Support Vector Machine, Logistic Regression, Quadratic Discriminant Analysis, Extra Tree Classifier, Xgboost Classifier, Light GBM, CatBoost Classifier, AdaBoost Classifier, Bagging Classifier, RandomForest Classifier, Stacking Classifier, Voting Classifier, Gaussian Naive Bayes (GaussianNB), Gaussian Process Classifier, Ridge Classifier, Decision Tree Classifier, KNeighbors Classifier models to determine the probability that a certain employee will leave the company.
+We will then test different parameters and probability thresholds using Confusion Matrices, Precision & Recall curves and ROC/AUC curves to determine which of the models has the most predictive power.
 
 
 
@@ -55,16 +37,14 @@ We will then test different parameters and probability threshold using confusion
 # Result
 
 - Model is biased towards predicting non attrition.
-- There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. The business relevance is predict attrition well, rather than non attrition hence a lower probability threshold is chosen.
+- There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. From a business perspective, it's more valuable to predict attrition than it is to predict non-attrition.
 - The confusion matrix shows that of all the people who are going to leave the company, our algorithm identifies about 43% of them accurately. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
-- Ridge Classifier is the best model, as it predicts a higher area under the roc curve while Gaussian Naive Bayes is the best model, as it identifies higher percent of employees are leaving the company accurately.
+- The best overall model is a Ridge Classifier, as it predicts a higher area under the ROC curve. It is worth noting though, that the Gaussian Naive Bayes did identify a higher percentage of the churning employees accurately.
 
 
 
 # Solution
 
-In this context, the use of classification models to predict if an employee is likely 
-to quit could greatly increase the HR’s ability to intervene on time and remedy the situation to prevent attrition. 
-While this model can be routinely run to identify employees who are most likely to quit, the key driver of success would be 
-the human element of reaching out the employee, understanding the current situation of the employee and taking action to remedy controllable factors that can prevent attrition of the employee.
+In this context, the use of classification models to predict if an employee is likely to quit could increase HR’s ability to mitigate attrition. 
+While this model can be routinely run to identify employees who are most likely to quit, the key driver of success would be the human element of reaching out the employee, understanding the current situation of the employee and taking action to remedy controllable factors that can prevent their departure.
 In other words, predictive models could help raise flags, but the ultimate solution to this business problem is a function of the organization's culture: the quality of the relationships between HR and any given employee.
