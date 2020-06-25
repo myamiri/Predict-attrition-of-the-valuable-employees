@@ -52,7 +52,7 @@ We will then test different parameters and probability thresholds using Confusio
 - The best overall model is a Ridge Classifier, as it predicts a higher area under the Precision & Recall curve. It is worth noting though, that the Gaussian Naive Bayes did identify a higher percentage of the churning employees accurately.
 
 
-![attrition3](https://user-images.githubusercontent.com/33470542/85739211-9a82c100-b6ce-11ea-87a1-11555d0d0ecb.png)
+![attrition6](https://user-images.githubusercontent.com/33470542/85757093-3ddad280-b6dd-11ea-90e3-f55cfe1a3896.png)
 
 ![attrition5](https://user-images.githubusercontent.com/33470542/85754880-724d8f00-b6db-11ea-963f-eaa3f535f65e.png)
    
