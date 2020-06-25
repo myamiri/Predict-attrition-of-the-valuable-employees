@@ -37,9 +37,27 @@ We will then test different parameters and probability thresholds using Confusio
 # Result
 
 - Model is biased towards predicting non attrition.
+
+![attrition1](https://user-images.githubusercontent.com/33470542/85738958-6d361300-b6ce-11ea-8fc0-985dfbb73c3c.png)
+
+
+
 - There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. From a business perspective, it's more valuable to predict attrition than it is to predict non-attrition.
 - The confusion matrix shows that of all the people who are going to leave the company, our algorithm identifies about 43% of them accurately. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
+
+
+![attrition2](https://user-images.githubusercontent.com/33470542/85739099-84750080-b6ce-11ea-974e-cb7efb7249c6.png)
+
+
 - The best overall model is a Ridge Classifier, as it predicts a higher area under the Precision & Recall curve. It is worth noting though, that the Gaussian Naive Bayes did identify a higher percentage of the churning employees accurately.
+
+
+![attrition3](https://user-images.githubusercontent.com/33470542/85739211-9a82c100-b6ce-11ea-87a1-11555d0d0ecb.png)
+
+
+![attrition4](https://user-images.githubusercontent.com/33470542/85739288-a8384680-b6ce-11ea-95fa-7c3968b6835a.png)
+
+
 
 
 
