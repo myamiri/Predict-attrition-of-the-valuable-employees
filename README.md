@@ -43,7 +43,7 @@ We will then test different parameters and probability thresholds using Confusio
 
 
 - There is a tension between probability threshold and the number of employees who are accurately predicted as potential churners. A high probability threshold would end in a high number of errors. From a business perspective, it's more valuable to predict attrition than it is to predict non-attrition.
-- The confusion matrix shows that of all the people who are going to leave the company, our algorithm identifies about 43% of them accurately. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
+- The confusion matrix shows that of all the people who are going to leave the company, our algorithm can lable 70% of them correctly. On the other hand, there is a cost of wrongly identifying attrition of non-leaving employees resulting in inefficiencies in resource allocation.
 
 
 ![attrition2](https://user-images.githubusercontent.com/33470542/85739099-84750080-b6ce-11ea-974e-cb7efb7249c6.png)
