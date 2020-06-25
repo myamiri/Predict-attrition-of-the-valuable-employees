@@ -54,7 +54,8 @@ We will then test different parameters and probability thresholds using Confusio
 
 ![attrition6](https://user-images.githubusercontent.com/33470542/85757093-3ddad280-b6dd-11ea-90e3-f55cfe1a3896.png)
 
-![attrition5](https://user-images.githubusercontent.com/33470542/85754880-724d8f00-b6db-11ea-963f-eaa3f535f65e.png)
+![attrition5](https://user-images.githubusercontent.com/33470542/85758603-7dee8500-b6de-11ea-9b4f-d7342d2947ec.png)
+
    
 
 
